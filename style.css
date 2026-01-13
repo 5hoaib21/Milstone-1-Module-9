@@ -208,6 +208,13 @@ main > section {
 .sponsor-companies img:hover {
   filter: grayscale(0%);
 }
+
+.footer {
+  background-color: #fff4e7;
+  margin: 240px;
+  padding: 40px 410px;
+  border-radius: 10px;
+}
 /* --------------------------------------------------------------- */
 /* responsive media query */
 @media screen and (max-width: 576px) {
