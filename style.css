@@ -158,15 +158,16 @@ main > section {
 }
 .sponsor-companies {
   display: grid;
-
   grid-template-columns: repeat(5, 1fr);
-  /* align-items: center; */
   gap: 50px;
-  /* justify-content: space-evenly; */
 }
 .sponsor-companies img {
   /* justify-content: space-between; */
   filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.sponsor-companies img:hover {
+  filter: grayscale(0%);
 }
 
 /* responsive media query */
@@ -185,6 +186,11 @@ main > section {
     justify-items: center;
     gap: 24px;
   }
+  .sponsor-companies {
+    justify-items: center;
+
+    gap: 50px;
+  }
   .our-features {
     margin-left: 20px;
   }
@@ -197,5 +203,11 @@ main > section {
   }
   .our-features {
     margin: 50px auto;
+  }
+  .sponsor-companies,
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
   }
 }
